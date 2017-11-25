@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nibesh.calculator.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/nbrid"
+        android:text=" "
+        android:textSize="60dp"/>
+
+    <Button
+        android:id="@+id/bt_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nbrid"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="45dp"
+        android:text="+"
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/bt_subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:text="-"
+        android:layout_alignBaseline="@+id/bt_plus"
+        android:layout_alignBottom="@+id/bt_plus"
+        android:layout_alignParentEnd="true"
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/bt_mult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="x"
+        android:layout_below="@+id/bt_plus"
+        android:layout_alignStart="@+id/bt_plus"
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/bt_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_mult"
+        android:text="/"
+        android:layout_alignTop="@+id/bt_mult"
+        android:layout_alignStart="@+id/bt_subtract"
+        android:layout_alignEnd="@+id/bt_subtract"
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/bt_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bt_mult"
+        android:layout_below="@+id/bt_mult"
+        android:layout_marginTop="37dp"
+        android:text="%"
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/bt_equal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bt_div"
+        android:layout_alignTop="@+id/bt_percent"
+        android:text="="
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/bt_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textSize="30dp"
+        android:layout_alignBottom="@+id/bt_percent"
+        android:layout_toEndOf="@+id/bt_percent"
+        android:layout_alignTop="@+id/bt_percent" />
+</RelativeLayout>
